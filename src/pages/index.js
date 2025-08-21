@@ -1,5 +1,7 @@
-import Link from 'next/link';
-import Head from 'next/head';
+import Link from "next/link";
+import Head from "next/head";
+import HeroSection from "@/components/landing/HeroSection";
+import AboutSection from "@/components/landing/AboutSection";
 
 export default function HomePage() {
   return (
@@ -7,12 +9,9 @@ export default function HomePage() {
       <Head>
         <title>E-LearnQU!!!</title>
       </Head>
-      <main>
-        <section className="container mx-auto px-6 py-28 text-center">
-          <h1 className="text-4xl sm:text-6xl font-extrabold text-text-primary tracking-tight">
-            Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit.
-          </h1>
-        </section>
+      <main className="w-full h-full">
+        <HeroSection />
+        <AboutSection />
       </main>
     </>
   );
