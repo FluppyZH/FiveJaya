@@ -7,11 +7,7 @@
 }
 
 body {
-<<<<<<< HEAD
   @apply bg-gradient-to-b from-slate-900 to-black text-gray-300;
-=======
-  @apply bg-background text-text-primary;
->>>>>>> b1ba667e75dfe2313f37c7fd8143d0ea6362ad3f
 }
 
 .background-image {
@@ -21,8 +17,4 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> b1ba667e75dfe2313f37c7fd8143d0ea6362ad3f
