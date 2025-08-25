@@ -1,6 +1,10 @@
 import '@/styles/globals.css';
 import Layout from '@/components/Layout';
 import { Plus_Jakarta_Sans } from 'next/font/google';
+import { useRouter } from 'next/router';
+import { AuthProvider } from '@/context/AuthContext';
+import { useState, useEffect } from 'react';        
+import LoadingScreen from '@/components/LoadingScreen'; 
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -9,18 +13,32 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export default function App({ Component, pageProps }) {
-  
-  const isAuthPage = Component.name === 'LoginPage' || Component.name === 'RegisterPage';
+  const router = useRouter();
+  const [loading, setLoading] = useState(true); 
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <main className={`${jakarta.variable} font-sans bg-background`}>
-      {isAuthPage ? (
-        <Component {...pageProps} />
-      ) : (
-        <Layout>
+    <AuthProvider>
+      <main className={`${jakarta.variable} font-sans`}>
+        {loading ? (
+          <LoadingScreen />
+        ) : router.pathname.startsWith('/dashboard') ? (
           <Component {...pageProps} />
-        </Layout>
-      )}
-    </main>
+        ) : router.pathname === '/login' || router.pathname === '/register' ? (
+          <Component {...pageProps} />
+        ) : (
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        )}
+      </main>
+    </AuthProvider>
   );
 }
