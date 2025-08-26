@@ -8,7 +8,7 @@ export default function LimitPage3() {
         <title>Limit: Video Pembahasan | Bagian 3</title>
       </Head>
       <div className="container mx-auto px-6 py-12">
-        <Link href="/materi/math/10" className="text-blue-400 hover:text-blue-500 transition-colors flex items-center mb-8">
+        <Link href="/materi/math/12" className="text-blue-400 hover:text-blue-500 transition-colors flex items-center mb-8">
           &larr; Kembali ke Materi Limit Kelas 12
         </Link>
         <h1 className="text-4xl font-extrabold text-white mb-6">
@@ -42,10 +42,10 @@ export default function LimitPage3() {
         </div>
 
         <div className="flex justify-between mt-12 pt-8 border-t border-slate-700">
-          <Link href="/materi/math/10/page-2" className="text-blue-400 hover:text-blue-500 transition-colors flex items-center">
+          <Link href="/materi/math/12/page-2" className="text-blue-400 hover:text-blue-500 transition-colors flex items-center">
             &larr; Materi Sebelumnya (Bagian 2)
           </Link>
-          <Link href="/materi/math/10" className="text-blue-400 hover:text-blue-500 transition-colors flex items-center">
+          <Link href="/materi/math/12" className="text-blue-400 hover:text-blue-500 transition-colors flex items-center">
             Kembali ke Daftar Materi Limit
           </Link>
         </div>
