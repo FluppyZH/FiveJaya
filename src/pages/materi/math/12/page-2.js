@@ -32,7 +32,6 @@ export default function LimitPage2() {
           </p>
         </div>
 
-        {/* Foto tunggal */}
         <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden mb-8">
           <Image 
             src="/avatars/limit3.jpg" 
