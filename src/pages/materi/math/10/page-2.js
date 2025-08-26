@@ -33,7 +33,7 @@ export default function EksponenPage2() {
           </div>
           <div className="relative w-full h-64 rounded-lg overflow-hidden">
             <Image 
-              src="/avatars/pertidaksamaan.png" 
+              src="/avatars/tidaksama.png" 
               alt="Ilustrasi Pertidaksamaan Eksponen" 
               layout="fill" 
               objectFit="cover" 
