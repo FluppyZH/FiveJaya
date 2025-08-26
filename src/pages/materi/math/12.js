@@ -11,8 +11,8 @@ const MateriPageCard = ({ title, description, href }) => (
 export default function MateriKelas12Index() {
   const pages = [
     {
-      title: "Konsep Dasar dan Ruang Sampel",
-      description: "Pengenalan Limit, kejadian, dan cara menentukan ruang sampel.",
+      title: "Pengertian dan sifat dasar",
+      description: "Pengenalan Limit, kejadian, dan sifat dasar limit.",
       href: "/materi/math/12/page-1"
     },
     {

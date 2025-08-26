@@ -8,55 +8,66 @@ export default function LimitPage1() {
       <Head>
         <title>Limit: Pengertian dan Sifat Dasar | Bagian 1</title>
       </Head>
+
       <div className="container mx-auto px-6 py-12">
-        <Link href="/materi/math/10" className="text-blue-400 hover:text-blue-500 transition-colors flex items-center mb-8">
-          &larr; Kembali ke Materi Limit Kelas 10
+        <Link 
+          href="/materi/math/12" 
+          className="text-blue-400 hover:text-blue-500 transition-colors flex items-center mb-8"
+        >
+          &larr; Kembali ke Materi Limit Kelas 12
         </Link>
-        <h1 className="text-4xl font-extrabold text-white mb-6">
+
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">
           Limit: Pengertian dan Sifat Dasar
         </h1>
         
-        <div className="prose prose-invert text-lg text-slate-300 mb-8">
+        <div className="prose prose-invert text-base sm:text-lg text-slate-300 mb-8">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Limit dalam matematika adalah konsep yang digunakan untuk menggambarkan perilaku fungsi ketika variabelnya mendekati nilai tertentu.
           </p>
           <p>
-            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus auctor mattis.
+            Dalam bahasa yang lebih sederhana, limit adalah nilai yang didekati oleh suatu fungsi ketika variabelnya mendekati nilai tertentu, tetapi tidak harus sama dengan nilai fungsi pada titik tersebut.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          <div className="relative w-full h-64 rounded-lg overflow-hidden">
+        {/* Slider pakai scroll-snap */}
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 mb-8 rounded-lg scrollbar-hide">
+          <div className="snap-center shrink-0 relative w-full h-64 sm:h-80 rounded-lg overflow-hidden">
             <Image 
-              src="/avatars/Limit_1.png" 
+              src="/avatars/limit1.jpg" 
               alt="Ilustrasi Limit 1" 
-              layout="fill" 
-              objectFit="cover" 
-              className="rounded-lg"
+              fill
+              className="object-cover rounded-lg"
+              priority
             />
           </div>
-          <div className="relative w-full h-64 rounded-lg overflow-hidden">
+          <div className="snap-center shrink-0 relative w-full h-64 sm:h-80 rounded-lg overflow-hidden">
             <Image 
-              src="/avatars/Limit_2.png" 
+              src="/avatars/limit2.jpg" 
               alt="Ilustrasi Limit 2" 
-              layout="fill" 
-              objectFit="cover" 
-              className="rounded-lg"
+              fill
+              className="object-cover rounded-lg"
             />
           </div>
         </div>
 
-        <div className="prose prose-invert text-lg text-slate-300">
+        <div className="prose prose-invert text-base sm:text-lg text-slate-300">
           <p>
-            Vivamus id enim. Morbi ac felis. Curabitur egestas sem at lectus. Sed at libero vitae nisl euismod pretium. Aliquam eu nunc. Suspendisse potenti. Morbi ac felis. Curabitur egestas sem at lectus. Sed at libero vitae nisl euismod pretium. Aliquam eu nunc. Suspendisse potenti. Fusce a quam. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
+            Nah, limit itu digunakan dalam berbagai konsep matematika seperti Kalkulus, Analisis, dan yang lainnya.
           </p>
         </div>
 
-        <div className="flex justify-between mt-12 pt-8 border-t border-slate-700">
-          <Link href="/materi/math/10" className="text-blue-400 hover:text-blue-500 transition-colors flex items-center">
+        <div className="flex flex-col sm:flex-row justify-between mt-12 pt-8 border-t border-slate-700 gap-4">
+          <Link 
+            href="/materi/math/12" 
+            className="text-blue-400 hover:text-blue-500 transition-colors flex items-center"
+          >
             &larr; Kembali ke Daftar Materi
           </Link>
-          <Link href="/materi/math/10/page-2" className="text-blue-400 hover:text-blue-500 transition-colors flex items-center">
+          <Link 
+            href="/materi/math/12/page-2" 
+            className="text-blue-400 hover:text-blue-500 transition-colors flex items-center"
+          >
             Materi Selanjutnya (Bagian 2) &rarr;
           </Link>
         </div>

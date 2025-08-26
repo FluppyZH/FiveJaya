@@ -27,26 +27,15 @@ export default function PeluangPage2() {
 
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          <div className="relative w-full h-64 rounded-lg overflow-hidden">
-            <Image 
-              src="/avatars/Peluang_3.png" 
-              alt="Ilustrasi Persamaan Peluang" 
-              layout="fill" 
-              objectFit="cover" 
-              className="rounded-lg"
-            />
-          </div>
-          <div className="relative w-full h-64 rounded-lg overflow-hidden">
-            <Image 
-              src="/avatars/Peluang_4.png" 
-              alt="Ilustrasi Pertidaksamaan Peluang" 
-              layout="fill" 
-              objectFit="cover" 
-              className="rounded-lg"
-            />
-          </div>
-        </div>
+<div className="relative w-full h-80 rounded-lg overflow-hidden mb-8">
+  <Image 
+    src="/avatars/peluang2.png" 
+    alt="Ilustrasi Materi Peluang" 
+    layout="fill" 
+    objectFit="cover" 
+    className="rounded-lg"
+  />
+</div>
         
         <div className="prose prose-invert text-lg text-slate-300">
           <p>

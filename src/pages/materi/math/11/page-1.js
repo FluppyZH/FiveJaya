@@ -21,26 +21,15 @@ export default function PeluangPage1() {
             <p>Dasar utama dalam peluang adalah ruang sampel, yaitu himpunan semua hasil yang mungkin terjadi dari suatu percobaan. Misalnya, pada pelemparan sebuah koin, ruang sampelnya adalah angka, gambar. Pada pelemparan sebuah dadu enam sisi, ruang sampelnya adalah 1, 2, 3, 4, 5, 6. Memahami ruang sampel penting agar kita bisa menghitung peluang secara benar.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          <div className="relative w-full h-64 rounded-lg overflow-hidden">
-            <Image 
-              src="/avatars/Peluang1.png" 
-              alt="Peluang 1" 
-              layout="fill" 
-              objectFit="cover" 
-              className="rounded-lg"
-            />
-          </div>
-          <div className="relative w-full h-64 rounded-lg overflow-hidden">
-            <Image 
-              src="/avatars/Peluang2.png" 
-              alt="Peluang 2" 
-              layout="fill" 
-              objectFit="cover" 
-              className="rounded-lg"
-            />
-          </div>
-        </div>
+<div className="relative w-full h-80 rounded-lg overflow-hidden mb-8">
+  <Image 
+    src="/avatars/peluang1.jpg" 
+    alt="Ilustrasi Materi Peluang" 
+    layout="fill" 
+    objectFit="cover" 
+    className="rounded-lg"
+  />
+</div>
 
         <div className="prose prose-invert text-lg text-slate-300">
           <p>Titik sampel adalah setiap elemen tunggal dari ruang sampel. Misalnya, pada dadu enam sisi, “3” adalah sebuah titik sampel. Ketika kita membicarakan suatu kejadian, kita sebenarnya merujuk pada kumpulan titik sampel tertentu. Contohnya, kejadian muncul bilangan genap pada pelemparan dadu memiliki titik sampel 2, 4, 6. Dengan kata lain, titik sampel adalah unit terkecil dalam ruang sampel.</p>

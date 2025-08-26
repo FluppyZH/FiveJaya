@@ -17,10 +17,10 @@ export default function PeluangPage3() {
 
         <div className="prose prose-invert text-lg text-slate-300 mb-8">
           <p>
-            Nah kita udah ada di akhir pembahasan nih guys, kira kira nih dari pembahasan eksponen sebelumnya, teman teman semua udah mulai paham ga sih? pastinya udah lah ya.
+            Nah kita udah ada di akhir pembahasan nih guys, kira kira nih dari pembahasan peluang sebelumnya, teman teman semua udah mulai paham ga sih? pastinya udah lah ya.
           </p>
           <p>
-            Tenang aja buat teman teman semua yang masih belum paham tentang materi eksponen yang masih dasar, E-LearnQU! udah sediain video pembahasannya juga kok!! silahkan di tonton ya teman teman.
+            Tenang aja buat teman teman semua yang masih belum paham tentang materi peluang yang masih dasar, E-LearnQU! udah sediain video pembahasannya juga kok!! silahkan di tonton ya teman teman.
           </p>
         </div>
 
