@@ -30,7 +30,6 @@ export default function LimitPage1() {
           </p>
         </div>
 
-        {/* Slider pakai scroll-snap */}
         <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 mb-8 rounded-lg scrollbar-hide">
           <div className="snap-center shrink-0 relative w-full h-64 sm:h-80 rounded-lg overflow-hidden">
             <Image 
